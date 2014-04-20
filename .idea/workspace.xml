@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dbae6c8a-2a5f-4199-a20e-dc9fd7a16bf5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-    </list>
+    <list default="true" id="dbae6c8a-2a5f-4199-a20e-dc9fd7a16bf5" name="Default" comment="" />
     <ignored path="OpKoKo2014.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="dbae6c8a-2a5f-4199-a20e-dc9fd7a16bf5" time="1397975613802" ignored="false" />
