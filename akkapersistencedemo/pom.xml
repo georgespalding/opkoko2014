@@ -6,44 +6,13 @@
     <groupId>se.op.opkoko2014</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
+
   <groupId>se.op.opkoko2014.akkapersistencedemo</groupId>
   <artifactId>akkapersistencedemo</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <name>${project.artifactId}</name>
-  <description>My wonderfull scala app</description>
-  <inceptionYear>2010</inceptionYear>
-  <licenses>
-    <license>
-      <name>My License</name>
-      <url>http://....</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
 
-  <properties>
-    <maven.compiler.source>1.5</maven.compiler.source>
-    <maven.compiler.target>1.5</maven.compiler.target>
-    <encoding>UTF-8</encoding>
-    <scala.version>2.8.0</scala.version>
-  </properties>
+  <description>Demo app for scala persistence</description>
+  <inceptionYear>2014</inceptionYear>
 
-<!--
-  <repositories>
-    <repository>
-      <id>scala-tools.org</id>
-      <name>Scala-Tools Maven2 Repository</name>
-      <url>http://scala-tools.org/repo-releases</url>
-    </repository>
-  </repositories>
-
-  <pluginRepositories>
-    <pluginRepository>
-      <id>scala-tools.org</id>
-      <name>Scala-Tools Maven2 Repository</name>
-      <url>http://scala-tools.org/repo-releases</url>
-    </pluginRepository>
-  </pluginRepositories>
--->
   <dependencies>
     <dependency>
       <groupId>org.scala-lang</groupId>
@@ -55,19 +24,16 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.8.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.scala-tools.testing</groupId>
       <artifactId>specs_${scala.version}</artifactId>
-      <version>1.6.5</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.scalatest</groupId>
       <artifactId>scalatest</artifactId>
-      <version>1.2</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

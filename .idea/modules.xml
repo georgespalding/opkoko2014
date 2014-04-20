@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OpKoKo2014.iml" filepath="$PROJECT_DIR$/OpKoKo2014.iml" />
+      <module fileurl="file://$PROJECT_DIR$/akkapersistencedemo/akkapersistencedemo.iml" filepath="$PROJECT_DIR$/akkapersistencedemo/akkapersistencedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafkademo/kafkademo.iml" filepath="$PROJECT_DIR$/kafkademo/kafkademo.iml" />
     </modules>
   </component>

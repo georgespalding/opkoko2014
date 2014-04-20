@@ -22,9 +22,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="akkapersistencedemo" />
         <module name="kafkademo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="akkapersistencedemo" target="1.7" />
+      <module name="kafkademo" target="1.7" />
+      <module name="OpKoKo2014" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 
