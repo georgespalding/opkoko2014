@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dbae6c8a-2a5f-4199-a20e-dc9fd7a16bf5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OpKoKo2014.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,7 +81,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="15" selection-start="334" selection-end="334" vertical-scroll-proportion="0.35123968">
+            <state line="16" column="5" selection-start="292" selection-end="292" vertical-scroll-proportion="0.3305785">
               <folding />
             </state>
           </provider>
@@ -410,7 +408,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="15" selection-start="334" selection-end="334" vertical-scroll-proportion="0.35123968">
+        <state line="16" column="5" selection-start="292" selection-end="292" vertical-scroll-proportion="0.3305785">
           <folding />
         </state>
       </provider>
