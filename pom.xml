@@ -63,7 +63,7 @@
         <dependencies>
             <dependency>
                 <groupId>org.apache.kafka</groupId>
-                <artifactId>kafka_2.10</artifactId>
+                <artifactId>kafka_${scala.version}</artifactId>
                 <version>0.8.1</version>
                 <exclusions>
                     <exclusion>
@@ -95,7 +95,7 @@
             </dependency>
             <dependency>
                 <groupId>org.scala-tools.testing</groupId>
-                <artifactId>specs_2.9.1</artifactId>
+                <artifactId>specs_${scala.version}</artifactId>
                 <version>1.6.9</version>
                 <scope>test</scope>
             </dependency>

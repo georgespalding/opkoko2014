@@ -26,7 +26,7 @@ One way to use ScalaTest is to help make JUnit or TestNG tests more
 clear and concise. Here's an example:
 */
 import scala.collection.mutable.Stack
-import org.scalatest.Assertions
+import org.scalatest.{FlatSpec, Matchers, Assertions}
 import org.junit.Test
 
 class StackSuite extends Assertions {
@@ -51,7 +51,7 @@ class StackSuite extends Assertions {
 Here's an example of a FunSuite with ShouldMatchers mixed in:
 */
 import org.scalatest.FunSuite
-import org.scalatest.matchers.ShouldMatchers
+import org.scalatest.ShouldMatchers
 
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
@@ -84,23 +84,18 @@ A Map
 - should only contain keys and values that were added to it
 - should report its size as the number of key/value pairs it contains
 */
-import org.scalatest.Spec
-import org.scalatest.matchers.MustMatchers
 
-class MapSpec extends Spec with MustMatchers {
+class MapSpec extends FlatSpec with Matchers {
 
-  describe("A Map") {
+  "A Map" should "only contain keys and values that were added to it" in {
+    Map("ho" -> 12).contains("hi") should be (false);
+    Map("hi" -> 13).contains("hi") should be (true);
+  }
 
-    it("should only contain keys and values that were added to it") {
-      Map("ho" -> 12) must (not contain key ("hi") and not contain value (13))
-      Map("hi" -> 13) must (contain key ("hi") and contain value (13))
-    }
-
-    it("should report its size as the number of key/value pairs it contains") {
-      Map() must have size (0)
-      Map("ho" -> 12) must have size (1)
-      Map("hi" -> 13, "ho" -> 12) must have size (2)
-    }
+  it should "report its size as the number of key/value pairs it contains" in {
+    Map().size should be should be (0)
+    Map("ho" -> 12).size should be (1)
+    Map("hi" -> 13, "ho" -> 12).size should be (2)
   }
 }
 

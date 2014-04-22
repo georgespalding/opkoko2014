@@ -27,7 +27,7 @@
     </dependency>
     <dependency>
       <groupId>org.scala-tools.testing</groupId>
-      <artifactId>specs_2.9.1</artifactId>
+      <artifactId>specs_${scala.version}</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -67,7 +67,7 @@
           <useFile>false</useFile>
           <disableXmlReport>true</disableXmlReport>
           <!-- If you have classpath issue like NoDefClassError,... -->
-          <!-- useManifestOnlyJar>false</useManifestOnlyJar -->
+          <useManifestOnlyJar>false</useManifestOnlyJar>
           <includes>
             <include>**/*Test.*</include>
             <include>**/*Suite.*</include>

@@ -2,25 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_compiler_2_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_reflect_2_10_3.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_8_1.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_10_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_10_4.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_tools_testing_specs_2_10_1_1_6_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_tools_testing_specs_2_9_1_1_6_9.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalatest_scalatest_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalatest_scalatest_2_10_2_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_compiler_bundle_2_10_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_compiler_bundle_2_11_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_compiler_bundle_2_9_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/highlighting.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_compiler_2_9_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_tools_testing_specs_2_9_1_1_6_9.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/akkapersistencedemo/akkapersistencedemo.iml" afterPath="$PROJECT_DIR$/akkapersistencedemo/akkapersistencedemo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kafkademo/kafkademo.iml" afterPath="$PROJECT_DIR$/kafkademo/kafkademo.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/akkapersistencedemo/pom.xml" afterPath="$PROJECT_DIR$/akkapersistencedemo/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/akkapersistencedemo/src/test/scala/samples/scalatest.scala" afterPath="$PROJECT_DIR$/akkapersistencedemo/src/test/scala/samples/scalatest.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OpKoKo2014.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398106947030" ignored="false" />
-    <file path="/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398106409907" ignored="false" />
-    <file path="/scalatest.scala" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398107123610" ignored="false" />
+    <file path="/Dummy.txt" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398193856850" ignored="false" />
+    <file path="/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398197782534" ignored="false" />
+    <file path="/scalatest.scala" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398197124516" ignored="false" />
+    <file path="/DistansDAO.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398196100014" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,24 +81,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="43" selection-start="3047" selection-end="3047" vertical-scroll-proportion="0.0">
+            <state line="97" column="50" selection-start="3472" selection-end="3472" vertical-scroll-proportion="0.51355207">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scalatest.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="scalatest.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/akkapersistencedemo/src/test/scala/samples/scalatest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="2" selection-start="2707" selection-end="2707" vertical-scroll-proportion="0.54820937">
+            <state line="25" column="38" selection-start="953" selection-end="953" vertical-scroll-proportion="4.8">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#957#994#0" expanded="true" />
-                <element signature="e#1540#1569#0" expanded="true" />
-                <element signature="e#2590#2615#0" expanded="true" />
+                <element signature="e#1562#1591#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,7 +115,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/akkapersistencedemo/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="28" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0">
+            <state line="29" column="18" selection-start="992" selection-end="1014" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -141,9 +140,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/kafkademo/pom.xml" />
+        <option value="$PROJECT_DIR$/akkapersistencedemo/src/test/scala/samples/scalatest.scala" />
         <option value="$PROJECT_DIR$/akkapersistencedemo/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/akkapersistencedemo/src/test/scala/samples/scalatest.scala" />
       </list>
     </option>
   </component>
@@ -214,8 +213,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -319,8 +318,8 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
@@ -337,6 +336,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -365,19 +377,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -463,7 +462,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -474,6 +472,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -543,6 +542,20 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/kafkademo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="29" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/akkapersistencedemo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="28" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="85" column="43" selection-start="3047" selection-end="3047" vertical-scroll-proportion="0.0">
@@ -556,8 +569,7 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#957#994#0" expanded="true" />
-            <element signature="e#1540#1569#0" expanded="true" />
-            <element signature="e#2590#2615#0" expanded="true" />
+            <element signature="e#1562#1591#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -588,23 +600,30 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kafkademo/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scalatest/scalatest_2.10/2.1.3/scalatest_2.10-2.1.3.jar!/org/scalatest/matchers/MustMatchers.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="29" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+        <state line="2" column="6" selection-start="105" selection-end="105" vertical-scroll-proportion="-1.2">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/akkapersistencedemo/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scalatest/scalatest_2.10/2.1.3/scalatest_2.10-2.1.3.jar!/org/scalatest/MustMatchers.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="28" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0">
+        <state line="344" column="42" selection-start="45853" selection-end="45853" vertical-scroll-proportion="-26.4">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scalatest/scalatest_2.10/2.1.3/scalatest_2.10-2.1.3.jar!/org/scalatest/SpecLike.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="43" selection-start="3047" selection-end="3047" vertical-scroll-proportion="0.0">
+        <state line="2" column="6" selection-start="51" selection-end="51" vertical-scroll-proportion="-1.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scalatest/scalatest_2.10/2.1.3/scalatest_2.10-2.1.3.jar!/org/scalatest/Spec.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="57" selection-start="102" selection-end="102" vertical-scroll-proportion="-1.2">
           <folding />
         </state>
       </provider>
@@ -614,13 +633,33 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="2" selection-start="2707" selection-end="2707" vertical-scroll-proportion="0.54820937">
+        <state line="25" column="38" selection-start="953" selection-end="953" vertical-scroll-proportion="4.8">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#957#994#0" expanded="true" />
-            <element signature="e#1540#1569#0" expanded="true" />
-            <element signature="e#2590#2615#0" expanded="true" />
+            <element signature="e#1562#1591#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kafkademo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="29" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/akkapersistencedemo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="18" selection-start="992" selection-end="1014" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="50" selection-start="3472" selection-end="3472" vertical-scroll-proportion="0.51355207">
+          <folding />
         </state>
       </provider>
     </entry>
