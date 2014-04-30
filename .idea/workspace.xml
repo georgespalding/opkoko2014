@@ -2,31 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/KafkaAppender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kafkademo/src/test/java/KafkaLogTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToXstreamJettisonEncoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_3_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_3_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kafkademo/src/test/resources/kafka_properties.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kafkademo/src/test/resources/logback-test.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_15.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kafkademo/kafkademo.iml" afterPath="$PROJECT_DIR$/kafkademo/kafkademo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kafkademo/pom.xml" afterPath="$PROJECT_DIR$/kafkademo/pom.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kafkademo/ApacheKafka OpKoKo2014 mkI.key/Data/st17-2207.jpg" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kafkademo/src/test/java/KafkaLogTest.java" afterPath="$PROJECT_DIR$/kafkademo/src/test/java/se/op/opkoko2014/kafka/KafkaLogTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kafkademo/ApacheKafka OpKoKo2014 mkI.key/Metadata/Properties.plist" afterPath="$PROJECT_DIR$/kafkademo/ApacheKafka OpKoKo2014 mkI.key/Metadata/Properties.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java" afterPath="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OpKoKo2014.iws" />
@@ -37,13 +16,13 @@
     <file path="/DistansDAO.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398768526419" ignored="false" />
     <file path="/KafkaLoggerFactory.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398707855037" ignored="false" />
     <file path="/KafkaLogger.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398796010655" ignored="false" />
-    <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/main/java/se/pharmasolutions/pi/wms/DistansDomainFactory.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398841911018" ignored="false" />
+    <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/main/java/se/pharmasolutions/pi/wms/DistansDomainFactory.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398848992148" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/main/java/se/pharmasolutions/pi/wms/domain/OtcHaArtikelInfo.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398761931453" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/main/java/se/pharmasolutions/pi/wms/DistansDAO.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398842123891" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/main/java/se/pharmasolutions/pi/wms/DistansServiceBean.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398841728954" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/main/java/se/pharmasolutions/pi/wms/domain/ArtikelInfo.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398761931453" ignored="false" />
     <file path="/ArtikelInfo.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398250540591" ignored="false" />
-    <file path="/fragment.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398805076121" ignored="false" />
+    <file path="/fragment.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398847471351" ignored="false" />
     <file path="/DistansServiceBean.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398841724236" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaPersistence/src/main/java/se/pharmasolutions/pi/util/EnumerationUtil.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398263082869" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-war/src/main/java/se/pharmasolutions/pi/ws/PharmaWMSIntegratorWS.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398337150205" ignored="false" />
@@ -93,13 +72,13 @@
     <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/main/java/se/pharmasolutions/pi/rexp/service/ReceptOrderServiceBean.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398764034576" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaPersistence/src/main/java/se/pharmasolutions/pi/wms/entity/DistansreceptbestallningsradEntity.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398761931453" ignored="false" />
     <file path="/OtcHaArtikelInfo.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398429873270" ignored="false" />
-    <file path="/DistansDomainFactory.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398841902944" ignored="false" />
+    <file path="/DistansDomainFactory.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398848991703" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/main/java/se/pharmasolutions/pi/wms/domain/DistansorderInfo.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398761931452" ignored="false" />
     <file path="/DistansorderInfo.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398331418024" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/test/java/se/pharmasolutions/pi/wms/DistansServiceBeanTest.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398761318557" ignored="false" />
     <file path="/DistansServiceBeanTest.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398333218865" ignored="false" />
-    <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/main/java/se/pharmasolutions/pi/wms/domain/DistansorderBase.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398334762849" ignored="false" />
-    <file path="/DistansorderBase.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398334539232" ignored="false" />
+    <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/main/java/se/pharmasolutions/pi/wms/domain/DistansorderBase.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398848085162" ignored="false" />
+    <file path="/DistansorderBase.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398847466336" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/main/java/se/pharmasolutions/pi/wms/WMSAviseringsServiceBean.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398337501367" ignored="false" />
     <file path="/DistansbestallningsradEntity.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398345798809" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaPersistence/src/main/java/se/pharmasolutions/pi/wms/entity/DistansbestallningsradEntity.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398761931452" ignored="false" />
@@ -231,14 +210,16 @@
     <file path="/JacksonKafkaSerializer.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398791189360" ignored="false" />
     <file path="/LoggingEventToJsonEncoder.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398805059150" ignored="false" />
     <file path="/logback-test.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398802886867" ignored="false" />
-    <file path="/KafkaLogTest.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398807324946" ignored="false" />
+    <file path="/KafkaLogTest.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398852297220" ignored="false" />
     <file path="/kafka_properties.properties" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398803738731" ignored="false" />
     <file path="/KafkaAppender.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398803542953" ignored="false" />
-    <file path="/LoggingEventToJacksonEncoder.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398810077078" ignored="false" />
+    <file path="/LoggingEventToJacksonEncoder.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398847303394" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaCommon-ejb/src/main/java/se/pharmasolutions/pi/exception/ExceptionTranslator.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398840694775" ignored="false" />
     <file path="/ExceptionTranslator.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398840693526" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/main/java/se/pharmasolutions/pi/wms/domain/request/SkapaDistansorderradRequest.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398842123114" ignored="false" />
     <file path="/SkapaDistansorderradRequest.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398842114849" ignored="false" />
+    <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/main/java/se/pharmasolutions/pi/wms/domain/DistansutlamningsstalleStatus.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398848673286" ignored="false" />
+    <file path="/DistansutlamningsstalleStatus.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398848672805" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,10 +280,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LoggingEventToJacksonEncoder.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LoggingEventToJacksonEncoder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="12" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.21289356">
+            <state line="53" column="0" selection-start="2333" selection-end="2333" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -310,83 +291,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonSerializer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/JsonSerializer.java">
+      <file leaf-file-name="ILoggingEvent.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2-sources.jar!/ch/qos/logback/classic/spi/ILoggingEvent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="19" selection-start="4516" selection-end="4524" vertical-scroll-proportion="-8.56">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StdSerializer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/std/StdSerializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="42" selection-start="2637" selection-end="2637" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StdKeySerializers.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/std/StdKeySerializers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="24" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ToStringSerializer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/std/ToStringSerializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="13" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BeanSerializerFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/BeanSerializerFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="14" selection-start="3291" selection-end="3291" vertical-scroll-proportion="-5.56">
+            <state line="55" column="19" selection-start="1413" selection-end="1430" vertical-scroll-proportion="0.0">
               <folding>
+                <element signature="n#!!doc" expanded="false" />
                 <element signature="imports" expanded="false" />
-                <element signature="e#5548#5578#0" expanded="false" />
-                <element signature="e#15745#15775#0" expanded="false" />
-                <element signature="e#25538#25558#0" expanded="false" />
-                <element signature="e#30179#30197#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicSerializerFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/BasicSerializerFactory.java">
+      <file leaf-file-name="KafkaLogTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kafkademo/src/test/java/se/op/opkoko2014/kafka/KafkaLogTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="22" selection-start="1876" selection-end="1876" vertical-scroll-proportion="-6.0">
+            <state line="54" column="88" selection-start="2179" selection-end="2179" vertical-scroll-proportion="0.48958334">
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#2412#2439#0" expanded="false" />
-                <element signature="e#2746#2790#0" expanded="false" />
-                <element signature="e#4926#4956#1" expanded="false" />
-                <element signature="e#8769#8799#0" expanded="false" />
-                <element signature="e#18056#18086#0" expanded="false" />
-                <element signature="e#30793#30823#1" expanded="false" />
-                <element signature="e#36442#36472#1" expanded="false" />
-                <element signature="e#37234#37264#0" expanded="false" />
-                <element signature="e#37996#38026#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SerializerFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/SerializerFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="22" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1724#1738#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -410,7 +333,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/akkapersistencedemo/pom.xml" />
         <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/se/op/opkoko2014/log/KafkaLoggerFactory.java" />
         <option value="$PROJECT_DIR$/kafkademo/src/main/java/log/KafkaLogger.java" />
         <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/se/op/opkoko2014/log/KafkaLogger.java" />
@@ -426,6 +348,7 @@
         <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/KafkaAppender.java" />
         <option value="$PROJECT_DIR$/kafkademo/src/test/java/KafkaLogTest.java" />
         <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java" />
+        <option value="$PROJECT_DIR$/kafkademo/src/test/java/se/op/opkoko2014/kafka/KafkaLogTest.java" />
       </list>
     </option>
   </component>
@@ -651,32 +574,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpKoKo2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpKoKo2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kafkademo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="kafka" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -769,13 +666,14 @@
       <recent name="se.op.opkoko2014.kafka.log" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="se.op.opkoko2014.kafka" />
       <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Application.KafkaLogTest">
     <configuration default="false" name="KafkaLogTest" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="KafkaLogTest" />
+      <option name="MAIN_CLASS_NAME" value="se.op.opkoko2014.kafka.KafkaLogTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -786,7 +684,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="kafkademo" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -922,7 +826,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -930,7 +834,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39920425" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -944,7 +848,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.5636605" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.241033" sideWeight="0.5636605" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43633953" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43633953" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1015,22 +919,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/MappingJsonFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="45" selection-start="1419" selection-end="1419" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/BeanSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/BeanSerializerFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="72" column="14" selection-start="3291" selection-end="3291" vertical-scroll-proportion="-5.56">
@@ -1095,14 +983,20 @@
     <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/std/ToStringSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="13" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/std/StdSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="42" selection-start="2637" selection-end="2637" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1622#1652#0" expanded="false" />
+            <element signature="e#1888#1918#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1123,14 +1017,11 @@
     <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/std/StdKeySerializers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="24" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/std/NullSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="27" selection-start="674" selection-end="688" vertical-scroll-proportion="0.2795031">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#464#494#0" expanded="false" />
+            <element signature="e#698#728#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1141,11 +1032,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/std/NullSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="45" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2-sources.jar!/ch/qos/logback/classic/spi/ILoggingEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="19" selection-start="1413" selection-end="1430" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="12" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.21289356">
+        <state line="53" column="0" selection-start="2333" selection-end="2333" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kafkademo/src/test/java/se/op/opkoko2014/kafka/KafkaLogTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="88" selection-start="2179" selection-end="2179" vertical-scroll-proportion="0.48958334">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1724#1738#0" expanded="true" />
           </folding>
         </state>
       </provider>

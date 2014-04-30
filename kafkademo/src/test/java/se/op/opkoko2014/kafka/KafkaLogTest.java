@@ -1,3 +1,5 @@
+package se.op.opkoko2014.kafka;
+
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.util.LinkedList;
@@ -7,8 +9,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
 import org.slf4j.bridge.SLF4JBridgeHandler;
@@ -43,7 +43,7 @@ public class KafkaLogTest {
 
         ExecutorService executor = Executors.newFixedThreadPool(NTHREDS);
         List<Future<Long>> list = new LinkedList<Future<Long>>();
-        for (int i = 0; i < 20000; i++) {
+        for (int i = 0; i < 20; i++) {
             final int ci=i;
             Callable worker = new Callable(){
 
@@ -52,6 +52,7 @@ public class KafkaLogTest {
                     final String userid = ""+sr.nextInt(17);
                     try{
                         MDC.getMDCAdapter().put("userid", userid);
+                        MDC.getMDCAdapter().put("clientip", "192.168.47."+sr.nextInt(255));
                         Double d = sr.nextDouble();
                         slf4jLogger.info("Message-{0}: {1}",ci,d);
                         return d;

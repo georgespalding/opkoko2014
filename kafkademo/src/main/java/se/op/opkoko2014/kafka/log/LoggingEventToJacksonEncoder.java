@@ -47,10 +47,10 @@ public class LoggingEventToJacksonEncoder implements Encoder<ILoggingEvent>{
             throw new RuntimeException("Failed to get method getCallerData on class ILoggingEvent",e);
         }
         SimpleModule testModule = new SimpleModule("DemoModule", VersionUtil.versionFor(this.getClass()));
-                 testModule.addSerializer(
-                         new JsonValueSerializer(
-                                 method,
-                                 null));
+        testModule.addSerializer(StackTraceElement.class,new JsonSerializer<StackTraceElement>() {
+            @Override
+            public void serialize(StackTraceElement value, JsonGenerator jgen, SerializerProvider provider){}
+        });
         mapper.registerModule(testModule);
 
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
