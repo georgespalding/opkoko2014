@@ -6,66 +6,30 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.util.Arrays;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 import akka.actor.*;
 import akka.japi.Procedure;
 import akka.persistence.*;
-import static java.util.Arrays.asList;
-
-abstract class Transfer {
-    public final BigDecimal amount;
-    public final long toAccountId;
-
-    Transfer(BigDecimal amount, long toAccountId) {
-        assert null!=amount :"Amount should not be null";
-        assert amount.compareTo(BigDecimal.ZERO)>0 :"Amount should not be greater than zero.";
-        this.amount = amount;
-        this.toAccountId = toAccountId;
-    }
-}
-
-final class AccountTransfer extends Transfer{
-    public final long fromAccountId;
-
-    AccountTransfer(BigDecimal amount, long fromAccountId, long toAccountId) {
-        super(amount, toAccountId);
-        this.fromAccountId = fromAccountId;
-    }
-}
-
-abstract class CashTransfer extends Transfer{
-    CashTransfer(BigDecimal amount, long toAccountId) {
-        super(amount, toAccountId);
-    }
-}
-
-final class CashWithdrawal extends CashTransfer {
-    CashWithdrawal(BigDecimal amount, long toAccountId) {
-        super(amount, toAccountId);
-    }
-}
-
-final class CashDeposit extends CashTransfer {
-    CashDeposit(BigDecimal amount, long accountId) {
-        super(amount, accountId);
-    }
-}
 
 // Bookeeping
 class Record implements Serializable {
-    private static final long serialVersionUID = 1L;
+    public static final long serialVersionUID = 1L;
     public final BigDecimal amount;
     public final String note;
     public final Date received;
+    public final boolean batch;
 
-    Record(BigDecimal amount, String note) {
+    Record(BigDecimal amount) {
+        this(amount,false);
+    }
+    Record(BigDecimal amount,boolean batch) {
+        this.batch=batch;
         this.amount = amount;
-        this.note = note;
+        final int diff=amount.compareTo(BigDecimal.ZERO);
+        this.note = diff>0?"Credit":diff<0?"Debit":"Zero!";
         this.received = new Date();
     }
 
@@ -75,55 +39,58 @@ class Record implements Serializable {
                 "amount=" + amount +
                 ", note='" + note + '\'' +
                 ", received=" + received +
+                ", batch=" + batch +
                 '}';
     }
 }
 
 class Account implements Serializable {
-    private static final long serialVersionUID = 1L;
+    public static final long serialVersionUID = 1L;
 
-    public final long accountId;
-    public BigDecimal balance;
-    public /*transient*/ LinkedList<Record> history;
+    // Persistent state
+    private BigDecimal balance = BigDecimal.ZERO;
+    // Persistent state
+    private List<Record> transactions = new LinkedList<>();
 
-    public Account(long accountId) {
-        this(accountId, BigDecimal.ZERO, new LinkedList<Record>());
-    }
+    // sortof transient state, not saved in eventqueue (but in snapshots)
+    public boolean showtransactions = true;
 
-    public Account(long accountId, BigDecimal balance, LinkedList<Record> history) {
-        this.accountId = accountId;
+    public Account() {}
+
+    public Account(BigDecimal balance, List<Record> transactions) {
         this.balance = balance;
-        this.history = history;
+        this.transactions = transactions;
     }
 
-    public Account copy() {
-        return new Account(accountId, balance,history);
+    public void updateBalance(Record change){
+        balance = balance.add(change.amount);
+        transactions.add(change);
     }
 
-    public void update(Record record) {
-        balance = balance.add(record.amount);
+    public Account copy(){
+        return new Account(balance, transactions);
     }
 
-    public int size() {
-        return history.size();
+    public BigDecimal getBalance() {
+        return balance;
     }
 
     @Override
     public String toString() {
         return "Account{" +
                 "balance=" + balance +
-                ", history=" + history +
+                ", transactions=" + (showtransactions ?transactions:"[...]") +
                 '}';
     }
 }
 
 class AccountProcessor extends UntypedEventsourcedProcessor {
-    private Account account;
+    private Account account = new Account();
 
     public void onReceiveRecover(Object msg) {
         System.out.println(msg);
         if (msg instanceof Record) {
-            account.update((Record) msg);
+            account.updateBalance((Record) msg);
         } else if (msg instanceof SnapshotOffer) {
             account = (Account)((SnapshotOffer)msg).snapshot();
         } else {
@@ -132,154 +99,104 @@ class AccountProcessor extends UntypedEventsourcedProcessor {
     }
 
     public void onReceiveCommand(Object msg) {
-        System.out.println(msg);
-        if (msg instanceof Transfer) {
-            // Translate Transfer to Records
-            final List<Record> events=new LinkedList<>();
+        System.out.println(">>>>"+msg);
+        if (msg instanceof BigDecimal || msg instanceof BigDecimal[]) {
+            // Create a batch of events (possibly only one) to be executed together.
+            final LinkedList<Record> records=new LinkedList<>();
+            BigDecimal totalChange = BigDecimal.ZERO;
+            if (msg instanceof BigDecimal){
+                records.add(new Record((BigDecimal)msg,false));
+                totalChange = (BigDecimal)msg;
+            }else {
+                for(BigDecimal each:(BigDecimal[])msg){
+                    records.add(new Record(each,true));
+                    totalChange=totalChange.add(each);
+                }
+            }
 
-            if(msg instanceof AccountTransfer){
-                final AccountTransfer accTran = (Transfer)msg;
-                events.add(new Record(
-                        accTran.amount.negate(),
-                        accTran.fromAccountId,
-                        "Transfer to "+tran.toAccountId));
-                events.add(new Record(
-                        accTran.amount,
-                        accTran.toAccountId,
-                        "Transfer from "+tran.fromAccountId));
-            } else if(msg instanceof CashTransfer){
-                boolean isDeposit = msg instanceof CashDeposit;
-                CashTransfer cashTran=(CashTransfer)msg;
-                events.add(new Record(isDeposit
-                        ?cashTran.amount
-                        :cashTran.amount.negate(),
-                        cashTran.toAccountId,"Cash "+(isDeposit?"deposit":"withdrawal")+" to "+cashTran.toAccountId));
+            // Validate
+            if(account.getBalance().add(totalChange).compareTo(BigDecimal.ZERO)<0){
+                // Negativt saldo!!!
+                sender().tell("Insufficient funds, (Out of Money)! REJECTED Command: "+records, getSelf());
+                return;
             }
 
             // Persist the Records
-            persist(evants, new Procedure<Record>() {
-                public void apply(Record record) throws Exception {
-                    state.update(record);
-                    if (evt.equals(events.last())) {
-                        getContext().system().eventStream().publish(evt);
-                    }
+            persist(records, new Procedure<Record>() {
+                public void apply(Record change) throws Exception {
+                    account.updateBalance(change);
+                    // Commit after update of each event in this batch.
+                    getContext().system().eventStream().publish(change);
                 }
             });
+        } else if (msg instanceof SaveSnapshotSuccess) {
+            System.err.println("<<<<snapshot saved");
         } else if (msg.equals("snap")) {
             // IMPORTANT: create a copy of snapshot
             // because the Map is mutable !!!
-            // FIXME break account into its own Persistent actor, onew per account
-            HashMap<Long, Account> copy = new HashMap();
-            for(Map.Entry<Long, Account> each:state.entrySet()){
-                // Copy Mutable Account, but Long which is immutable
-                copy.put(each.getKey(),each.getValue().copy());
-            }
-            saveSnapshot(copy);
+            saveSnapshot(account.copy());
         } else if (msg.equals("print")) {
-            System.out.println(state);
+            System.out.println(account);
+        } else if (msg.equals("showtran")) {
+            account.showtransactions = true;
+        } else if (msg.equals("hidetran")) {
+            account.showtransactions = false;
         } else if (msg.equals("nuke")) {
-            state = new ConcurrentHashMap<Long, Account>();
+            account = new Account();
         } else {
-            System.err.println("What is ");
-        }
-    }
-}
-
-class ExampleProcessor extends UntypedEventsourcedProcessor {
-    private ConcurrentHashMap<Long,Account> state = new ConcurrentHashMap<Long, Account>();
-
-    public int getNumEvents() {
-        return state.size();
-    }
-
-    public void onReceiveRecover(Object msg) {
-        System.out.println(msg);
-        if (msg instanceof Transfer) {
-            state.update((Transfer) msg);
-        } else if (msg instanceof SnapshotOffer) {
-            Map<Long,Account> backup = (HashMap<Long,Account>)((SnapshotOffer)msg).snapshot();
-            state = new ConcurrentHashMap<Long, Account>(backup);
-        } else {
-            System.err.println("onReceiveRecover unknown type! Type:"+msg.getClass());
-        }
-    }
-
-    public void onReceiveCommand(Object msg) {
-        System.out.println(msg);
-        if (msg instanceof Transfer) {
-            // Translate Transfer to Records
-            final List<Record> events=new LinkedList<>();
-
-            if(msg instanceof AccountTransfer){
-                final AccountTransfer accTran = (Transfer)msg;
-                events.add(new Record(
-                        accTran.amount.negate(),
-                        accTran.fromAccountId,
-                        "Transfer to "+tran.toAccountId));
-                events.add(new Record(
-                        accTran.amount,
-                        accTran.toAccountId,
-                        "Transfer from "+tran.fromAccountId));
-            } else if(msg instanceof CashTransfer){
-                boolean isDeposit = msg instanceof CashDeposit;
-                CashTransfer cashTran=(CashTransfer)msg;
-                events.add(new Record(isDeposit
-                        ?cashTran.amount
-                        :cashTran.amount.negate(),
-                        cashTran.toAccountId,"Cash "+(isDeposit?"deposit":"withdrawal")+" to "+cashTran.toAccountId));
-            }
-
-            // Persist the Records
-            persist(evants, new Procedure<Record>() {
-                public void apply(Record record) throws Exception {
-                    state.update(record);
-                    if (evt.equals(events.last())) {
-                        getContext().system().eventStream().publish(evt);
-                    }
-                }
-            });
-        } else if (msg.equals("snap")) {
-            // IMPORTANT: create a copy of snapshot
-            // because the Map is mutable !!!
-            // FIXME break account into its own Persistent actor, onew per account
-            HashMap<Long, Account> copy = new HashMap();
-            for(Map.Entry<Long, Account> each:state.entrySet()){
-                // Copy Mutable Account, but Long which is immutable
-                copy.put(each.getKey(),each.getValue().copy());
-            }
-            saveSnapshot(copy);
-        } else if (msg.equals("print")) {
-            System.out.println(state);
-        } else if (msg.equals("nuke")) {
-            state = new ConcurrentHashMap<Long, Account>();
-        } else {
-            System.err.println("What is ");
+            System.err.println("What is this? "+msg);
         }
     }
 }
 
 //#eventsourced-example
-
 public class EventsourcedExample {
     public static void main(String... args) throws Exception {
 
         final ActorSystem system = ActorSystem.create("example");
-        final ActorRef processor = system.actorOf(Props.create(ExampleProcessor.class), "processor-4-java");
+        final ActorRef processor = system.actorOf(Props.create(AccountProcessor.class), "processor-4-java");
+        final ActorRef sender = system.actorOf(Props.create(ExampleDestination.class), "sender-4-java");
 
-        processor.tell("nuke", null);
+
         processor.tell("print", null);
-        //Sätt in lite pengar
-        processor.tell(new CashDeposit(BigDecimal.TEN,4711L), null);
-        processor.tell(new CashDeposit(BigDecimal.ONE,1337L), null);
-        // Gör en överföring
-        processor.tell(new AccountTransfer(BigDecimal.ONE,4711L,1337L), null);
-        processor.tell("snap", null);
+
+        // Sätt in
+        //processor.tell(BigDecimal.TEN, sender);
+
+        // Ta ut
+        processor.tell(BigDecimal.valueOf(-21), sender);
+
+        // Sätt in och ta ut i en batch
+        processor.tell(new BigDecimal[]{
+                BigDecimal.valueOf(-21),
+                BigDecimal.valueOf(11),
+                BigDecimal.valueOf(1)}, sender);
+
+        // Sätt in och ta ut i en batch
+        processor.tell(new BigDecimal[]{
+                BigDecimal.valueOf(-21),
+                BigDecimal.valueOf(111),
+                BigDecimal.valueOf(1)}, sender);
+
+        processor.tell("hidetran", null);
         processor.tell("print", null);
+        processor.tell("showtran", null);
+
+        // Spara en snapshot
+        // processor.tell("snap", null);
 
         Thread.sleep(1000);
         system.shutdown();
     }
 }
+
+class ExampleDestination extends UntypedActor {
+    @Override
+    public void onReceive(Object message) throws Exception {
+        System.out.println("sender received " + message+ "from sender:"+sender());
+    }
+}
+
 
 // Not used right now
 class RandomNumberGenerator{

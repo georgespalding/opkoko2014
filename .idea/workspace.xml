@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedEx2.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/SampleNuke" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedExample.java" afterPath="$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RUNNING_PID" afterPath="$PROJECT_DIR$/RUNNING_PID" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OpKoKo2014.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398858404378" ignored="false" />
+    <file path="/Dummy.txt" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398953300265" ignored="false" />
     <file path="/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398852947088" ignored="false" />
     <file path="/scalatest.scala" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398197124516" ignored="false" />
     <file path="/DistansDAO.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398768526419" ignored="false" />
@@ -221,8 +224,8 @@
     <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
     <file path="$PROJECT_DIR$/../pharmaconnect/RexConnect/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
     <file path="$PROJECT_DIR$/../pharmaconnect/VBIntegration/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
-    <file path="/EventsourcedExample.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398952758652" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398952855195" ignored="false" />
+    <file path="/EventsourcedExample.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398961007859" ignored="false" />
+    <file path="/EventsourcedEx2.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398957368563" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,66 +286,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LoggingEventToJacksonEncoder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="0" selection-start="2333" selection-end="2333" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ILoggingEvent.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2-sources.jar!/ch/qos/logback/classic/spi/ILoggingEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="19" selection-start="1413" selection-end="1430" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="false" />
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KafkaLogTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kafkademo/src/test/java/se/op/opkoko2014/kafka/KafkaLogTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="64" selection-start="1527" selection-end="1535" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1724#1738#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.sbt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/akkapersistencedemo/build.sbt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewExample.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/ViewExample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EventsourcedExample.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="0" selection-start="3076" selection-end="6121" vertical-scroll-proportion="0.041322313">
+            <state line="178" column="16" selection-start="5883" selection-end="5883" vertical-scroll-proportion="0.58915836">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3211#3226#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -366,8 +315,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/kafkademo/src/main/java/log/KafkaLogger.java" />
-        <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/se/op/opkoko2014/log/KafkaLogger.java" />
         <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/JacksonKafkaSerializer.java" />
         <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventJacksonEncoder.java" />
         <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/KafkaLogger.java" />
@@ -381,6 +328,8 @@
         <option value="$PROJECT_DIR$/kafkademo/src/test/java/KafkaLogTest.java" />
         <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java" />
         <option value="$PROJECT_DIR$/kafkademo/src/test/java/se/op/opkoko2014/kafka/KafkaLogTest.java" />
+        <option value="$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventSourcedEx2.java" />
+        <option value="$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedEx2.java" />
         <option value="$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedExample.java" />
       </list>
     </option>
@@ -420,9 +369,17 @@
             <id>Plugin DevKit</id>
           </State>
           <State>
+            <id>Scala: General</id>
+          </State>
+          <State>
             <id>XPath</id>
           </State>
         </expanded-state>
+        <selected-state>
+          <State>
+            <id>SbtFileStructure</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -437,7 +394,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="2" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -452,8 +409,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -486,6 +443,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpKoKo2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpKoKo2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="akka-sample-persistence-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -493,16 +468,20 @@
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="OverrideImplement.combined" value="true" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="Errors" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/akka-sample-persistence-java" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -551,19 +530,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -590,6 +556,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -690,10 +669,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.6710875" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.241033" sideWeight="0.5636605" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43633953" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20291777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.241033" sideWeight="0.5636605" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -762,20 +741,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/jsontype/TypeSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="660" selection-end="660" vertical-scroll-proportion="0.31484258">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/std/JsonValueSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="32" selection-start="1384" selection-end="1403" vertical-scroll-proportion="0.06987578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/std/StdKeySerializers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="24" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.0">
@@ -789,34 +754,25 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/JsonSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="19" selection-start="4516" selection-end="4524" vertical-scroll-proportion="-8.56">
-          <folding />
-        </state>
+        <state line="103" column="19" selection-start="4516" selection-end="4524" vertical-scroll-proportion="-8.56" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/std/NullSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="45" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="29" column="45" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2-sources.jar!/ch/qos/logback/classic/spi/ILoggingEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="19" selection-start="1413" selection-end="1430" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="0" selection-start="2333" selection-end="2333" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -827,27 +783,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/ViewExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/io/Serializable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="64" selection-start="5997" selection-end="6038" vertical-scroll-proportion="0.1891892">
-          <folding />
-        </state>
+        <state line="138" column="64" selection-start="5997" selection-end="6038" vertical-scroll-proportion="0.1891892" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kafkademo/src/test/java/se/op/opkoko2014/kafka/KafkaLogTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="64" selection-start="1527" selection-end="1535" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1724#1738#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -867,24 +811,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/main.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="51" selection-start="395" selection-end="395" vertical-scroll-proportion="0.26373628">
-          <folding />
-        </state>
+        <state line="8" column="51" selection-start="395" selection-end="395" vertical-scroll-proportion="0.26373628" />
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2826" column="30" selection-start="128626" selection-end="128626" vertical-scroll-proportion="0.35507247">
+        <state line="2826" column="30" selection-start="128626" selection-end="128626" vertical-scroll-proportion="0.35507247" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedEx2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="24" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/ViewExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/akka-sample-persistence-java/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="64" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="0" selection-start="3076" selection-end="6121" vertical-scroll-proportion="0.041322313">
+        <state line="178" column="16" selection-start="5883" selection-end="5883" vertical-scroll-proportion="0.58915836">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3211#3226#0" expanded="true" />
           </folding>
         </state>
       </provider>
