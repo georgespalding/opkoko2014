@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/OpKoKo2014.iml" filepath="$PROJECT_DIR$/OpKoKo2014.iml" />
       <module fileurl="file://$PROJECT_DIR$/akkapersistencedemo/akkapersistencedemo.iml" filepath="$PROJECT_DIR$/akkapersistencedemo/akkapersistencedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafkademo/kafkademo.iml" filepath="$PROJECT_DIR$/kafkademo/kafkademo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/main.iml" filepath="$PROJECT_DIR$/akka-sample-persistence-java/src/main/main.iml" />
     </modules>
   </component>
 </project>

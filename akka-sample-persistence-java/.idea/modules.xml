@@ -1,0 +1,12 @@
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module 
+      fileurl="file://$PROJECT_DIR$/.idea_modules/akka-sample-persistence-java-build.iml" filepath="$PROJECT_DIR$/.idea_modules/akka-sample-persistence-java-build.iml">
+</module>
+      <module 
+      fileurl="file://$PROJECT_DIR$/.idea_modules/akka-sample-persistence-java.iml" filepath="$PROJECT_DIR$/.idea_modules/akka-sample-persistence-java.iml">
+</module>
+    </modules>
+  </component>
+</project>

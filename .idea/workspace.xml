@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kafkademo/ApacheKafka OpKoKo2014 mkI.key/Data/st17-2207.jpg" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/kafkademo/src/test/java/KafkaLogTest.java" afterPath="$PROJECT_DIR$/kafkademo/src/test/java/se/op/opkoko2014/kafka/KafkaLogTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/akkapersistencedemo/build.sbt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/akka-sample-persistence-java/src/main/main.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kafkademo/ApacheKafka OpKoKo2014 mkI.key/Data/st17-2213.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kafkademo/ApacheKafka OpKoKo2014 mkI.key/Metadata/Properties.plist" afterPath="$PROJECT_DIR$/kafkademo/ApacheKafka OpKoKo2014 mkI.key/Metadata/Properties.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java" afterPath="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OpKoKo2014.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398762232566" ignored="false" />
-    <file path="/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398806136202" ignored="false" />
+    <file path="/Dummy.txt" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398858404378" ignored="false" />
+    <file path="/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398852947088" ignored="false" />
     <file path="/scalatest.scala" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398197124516" ignored="false" />
     <file path="/DistansDAO.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398768526419" ignored="false" />
     <file path="/KafkaLoggerFactory.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398707855037" ignored="false" />
@@ -22,7 +23,7 @@
     <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/main/java/se/pharmasolutions/pi/wms/DistansServiceBean.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398841728954" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/main/java/se/pharmasolutions/pi/wms/domain/ArtikelInfo.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398761931453" ignored="false" />
     <file path="/ArtikelInfo.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398250540591" ignored="false" />
-    <file path="/fragment.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398847471351" ignored="false" />
+    <file path="/fragment.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398858404378" ignored="false" />
     <file path="/DistansServiceBean.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398841724236" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaPersistence/src/main/java/se/pharmasolutions/pi/util/EnumerationUtil.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398263082869" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-war/src/main/java/se/pharmasolutions/pi/ws/PharmaWMSIntegratorWS.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398337150205" ignored="false" />
@@ -48,8 +49,8 @@
     <file path="/PILicensFacadeLocal.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398272282675" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/main/java/se/pharmasolutions/pi/facade/PILicensFacadeBean.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398761931452" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaAll-ear/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398278335637" ignored="false" />
-    <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398761931453" ignored="false" />
-    <file path="$PROJECT_DIR$/../psrexserver/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398761931453" ignored="false" />
+    <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398858641038" ignored="false" />
+    <file path="$PROJECT_DIR$/../psrexserver/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398858641038" ignored="false" />
     <file path="$USER_HOME$/.m2/settings.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398275298472" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaPersistence/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398278335637" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaSchemas/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398278335637" ignored="false" />
@@ -68,7 +69,7 @@
     <file path="$PROJECT_DIR$/../psrexserver/PharmaInkop-ejb/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398278335637" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaInkop-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398278335638" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaCommon-ejb/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398278335638" ignored="false" />
-    <file path="$PROJECT_DIR$/../psrexserver/PharmaRS-ejb/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398761931453" ignored="false" />
+    <file path="$PROJECT_DIR$/../psrexserver/PharmaRS-ejb/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398858641038" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/main/java/se/pharmasolutions/pi/rexp/service/ReceptOrderServiceBean.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398764034576" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaPersistence/src/main/java/se/pharmasolutions/pi/wms/entity/DistansreceptbestallningsradEntity.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398761931453" ignored="false" />
     <file path="/OtcHaArtikelInfo.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398429873270" ignored="false" />
@@ -132,44 +133,44 @@
     <file path="$PROJECT_DIR$/../pharmaconnect/ApoHjartatIntegration/WmsIntegration-war/src/main/resources/META-INF/spring/beansWmsIntegrationSubmit.binding.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398419501440" ignored="false" />
     <file path="$PROJECT_DIR$/../pharmaconnect/ApoHjartatIntegration/WmsIntegration-war/src/main/webapp/WEB-INF/spring/beansDistansbestallningSubmitWMS.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398777705959" ignored="false" />
     <file path="/beansDistansbestallningSubmitWMS.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398777646448" ignored="false" />
-    <file path="/a.dummy" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398767629603" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/WmsWSClient-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/RexConnect/PsoVaraIntegration-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/PayExCatran-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/VBSchemas-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/KLSIntegration-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/VBIntegration/VBArticleImport-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/PayExAccountCheckPersistence-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/RexConnect/REXConnect-ear/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/ERPConnectWSClient-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/PayExSchemas-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/RexConnect/ERPConnect-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/KLSPersistence-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/RexConnect/RexConnect-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/RexConnect/VaraImport-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/RexConnectWSClient-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/ApoTjIntegration-ear/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/ApoHjartatIntegration/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/ApoHjartatIntegration/WmsIntegration-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/PayExIntegration-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/ApoHjartatIntegration/AOMIntegration-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/RexConnect/VaraConnect-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/ApoHjartatIntegration/CampaignIntegration-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/VaraConnectWSClient-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/UnifaunSchemas-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/ApoHjartatIntegration/ApoHjartatIntegration-ear/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/UnifaunIntegration-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/VBIntegration/VBIntegration-ear/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/PSOSchemas-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/PharmaConnectWebUtil-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/DosConnect-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/SupplierIntegration-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/PharmaConnectUtil-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/VBIntegration/VBCustomerImport-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/KLSSchemas-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/PharmaIntegratorDosConnectWSClient-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/ApoTjIntegrationUtil-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398420934926" ignored="false" />
+    <file path="/a.dummy" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398920399179" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/WmsWSClient-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/RexConnect/PsoVaraIntegration-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/PayExCatran-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/VBSchemas-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/KLSIntegration-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/VBIntegration/VBArticleImport-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/PayExAccountCheckPersistence-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/RexConnect/REXConnect-ear/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/ERPConnectWSClient-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/PayExSchemas-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/RexConnect/ERPConnect-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/KLSPersistence-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/RexConnect/RexConnect-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/RexConnect/VaraImport-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/RexConnectWSClient-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/ApoTjIntegration-ear/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/ApoHjartatIntegration/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/ApoHjartatIntegration/WmsIntegration-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/PayExIntegration-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/ApoHjartatIntegration/AOMIntegration-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/RexConnect/VaraConnect-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/ApoHjartatIntegration/CampaignIntegration-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/VaraConnectWSClient-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/UnifaunSchemas-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/ApoHjartatIntegration/ApoHjartatIntegration-ear/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/UnifaunIntegration-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/VBIntegration/VBIntegration-ear/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/PSOSchemas-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/PharmaConnectWebUtil-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/DosConnect-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/SupplierIntegration-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/PharmaConnectUtil-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/VBIntegration/VBCustomerImport-war/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/KLSSchemas-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/PharmaIntegratorDosConnectWSClient-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/ApoTjIntegrationUtil-jar/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexonline/PharmaOnline-war/src/main/java/se/pharmasolution/pso/server/dao/PropertyDAO.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398422169036" ignored="false" />
     <file path="/PropertyDAO.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398422119067" ignored="false" />
     <file path="/beansWmsIntegrationEnrich.binding.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398777453612" ignored="false" />
@@ -205,8 +206,8 @@
     <file path="$PROJECT_DIR$/../pharmaconnect/VaraConnectWSClient-jar/target/generated-sources/wsimport/se/pharmasolutions/pi/ws/PiKlientInfo.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398778491580" ignored="false" />
     <file path="$PROJECT_DIR$/../pharmaconnect/VaraConnectWSClient-jar/target/generated-sources/wsimport/se/pharmasolutions/pi/ws/ArtikelErp.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398778491580" ignored="false" />
     <file path="$PROJECT_DIR$/../pharmaconnect/RexConnect/PsoVaraIntegration-war/src/main/java/se/pharmasolutions/integration/pso/VaraConnectInboundEndpoint.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398781108255" ignored="false" />
-    <file path="$PROJECT_DIR$/../pharmaconnect/PharmaConnectUtil-jar/src/main/java/se/pharmasolutions/integration/util/spring/FileLoggingMessageHandler.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398783127056" ignored="false" />
-    <file path="/FileLoggingMessageHandler.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398781784849" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/PharmaConnectUtil-jar/src/main/java/se/pharmasolutions/integration/util/spring/FileLoggingMessageHandler.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398858645708" ignored="false" />
+    <file path="/FileLoggingMessageHandler.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398857236297" ignored="false" />
     <file path="/JacksonKafkaSerializer.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398791189360" ignored="false" />
     <file path="/LoggingEventToJsonEncoder.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398805059150" ignored="false" />
     <file path="/logback-test.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398802886867" ignored="false" />
@@ -220,6 +221,11 @@
     <file path="/SkapaDistansorderradRequest.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398842114849" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaServer-ejb/src/main/java/se/pharmasolutions/pi/wms/domain/DistansutlamningsstalleStatus.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398848673286" ignored="false" />
     <file path="/DistansutlamningsstalleStatus.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398848672805" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/ApoHjartatIntegration/AOMIntegration-war/src/main/resources/varaadapter/spring/vara-adapter.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398859423327" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/RexConnect/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="$PROJECT_DIR$/../pharmaconnect/VBIntegration/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
+    <file path="/EventsourcedExample.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398927079244" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,13 +309,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KafkaLogTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="KafkaLogTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kafkademo/src/test/java/se/op/opkoko2014/kafka/KafkaLogTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="88" selection-start="2179" selection-end="2179" vertical-scroll-proportion="0.48958334">
+            <state line="40" column="64" selection-start="1527" selection-end="1535" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1724#1738#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.sbt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/akkapersistencedemo/build.sbt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewExample.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/ViewExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventsourcedExample.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="170" column="50" selection-start="4921" selection-end="4921" vertical-scroll-proportion="0.21548118">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3250#3265#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -333,7 +369,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/se/op/opkoko2014/log/KafkaLoggerFactory.java" />
         <option value="$PROJECT_DIR$/kafkademo/src/main/java/log/KafkaLogger.java" />
         <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/se/op/opkoko2014/log/KafkaLogger.java" />
         <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/JacksonKafkaSerializer.java" />
@@ -349,6 +384,7 @@
         <option value="$PROJECT_DIR$/kafkademo/src/test/java/KafkaLogTest.java" />
         <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java" />
         <option value="$PROJECT_DIR$/kafkademo/src/test/java/se/op/opkoko2014/kafka/KafkaLogTest.java" />
+        <option value="$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedExample.java" />
       </list>
     </option>
   </component>
@@ -428,76 +464,6 @@
               <option name="myItemId" value="OpKoKo2014" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpKoKo2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: com.fasterxml.jackson.core:jackson-databind:2.3.3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jackson-databind-2.3.3.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpKoKo2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: com.fasterxml.jackson.core:jackson-databind:2.3.3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jackson-databind-2.3.3.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="databind" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpKoKo2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: com.fasterxml.jackson.core:jackson-databind:2.3.3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jackson-databind-2.3.3.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="databind" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -519,127 +485,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="kafkademo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpKoKo2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpKoKo2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kafkademo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpKoKo2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpKoKo2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kafkademo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kafka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpKoKo2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpKoKo2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kafkademo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kafka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpKoKo2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpKoKo2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kafkademo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kafka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log" />
+              <option name="myItemId" value="akka-sample-persistence-java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -654,7 +500,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/akka-sample-persistence-java" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
@@ -826,12 +672,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39920425" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -846,9 +692,9 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.5636605" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.241033" sideWeight="0.5636605" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43633953" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.6710875" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.241033" sideWeight="0.5636605" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43633953" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -919,76 +765,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/BeanSerializerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="14" selection-start="3291" selection-end="3291" vertical-scroll-proportion="-5.56">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#5548#5578#0" expanded="false" />
-            <element signature="e#15745#15775#0" expanded="false" />
-            <element signature="e#25538#25558#0" expanded="false" />
-            <element signature="e#30179#30197#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/BasicSerializerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="22" selection-start="1876" selection-end="1876" vertical-scroll-proportion="-6.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2412#2439#0" expanded="false" />
-            <element signature="e#2746#2790#0" expanded="false" />
-            <element signature="e#4926#4956#1" expanded="false" />
-            <element signature="e#8769#8799#0" expanded="false" />
-            <element signature="e#18056#18086#0" expanded="false" />
-            <element signature="e#30793#30823#1" expanded="false" />
-            <element signature="e#36442#36472#1" expanded="false" />
-            <element signature="e#37234#37264#0" expanded="false" />
-            <element signature="e#37996#38026#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/SerializerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="22" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.3.3/jackson-core-2.3.3.jar!/com/fasterxml/jackson/core/Version.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="11" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.3.3/jackson-core-2.3.3-sources.jar!/com/fasterxml/jackson/core/util/VersionUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="24" selection-start="874" selection-end="885" vertical-scroll-proportion="0.5604396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.3.3/jackson-core-2.3.3-sources.jar!/com/fasterxml/jackson/core/Version.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="15" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.30549452">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/std/ToStringSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/std/StdSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="42" selection-start="2637" selection-end="2637" vertical-scroll-proportion="0.0">
@@ -1058,12 +834,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/akkapersistencedemo/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/ViewExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/io/Serializable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="64" selection-start="5997" selection-end="6038" vertical-scroll-proportion="0.1891892">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kafkademo/src/test/java/se/op/opkoko2014/kafka/KafkaLogTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="88" selection-start="2179" selection-end="2179" vertical-scroll-proportion="0.48958334">
+        <state line="40" column="64" selection-start="1527" selection-end="1535" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1724#1738#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="297" column="15" selection-start="11620" selection-end="11620" vertical-scroll-proportion="2.243956">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/security/SecureRandom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="515" column="18" selection-start="18710" selection-end="18710" vertical-scroll-proportion="0.33186814">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/main.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="51" selection-start="395" selection-end="395" vertical-scroll-proportion="0.26373628">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="170" column="50" selection-start="4921" selection-end="4921" vertical-scroll-proportion="0.21548118">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3250#3265#0" expanded="true" />
           </folding>
         </state>
       </provider>
