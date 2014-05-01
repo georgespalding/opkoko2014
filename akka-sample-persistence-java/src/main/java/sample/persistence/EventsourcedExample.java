@@ -117,6 +117,74 @@ class Account implements Serializable {
     }
 }
 
+class AccountProcessor extends UntypedEventsourcedProcessor {
+    private Account account;
+
+    public void onReceiveRecover(Object msg) {
+        System.out.println(msg);
+        if (msg instanceof Record) {
+            account.update((Record) msg);
+        } else if (msg instanceof SnapshotOffer) {
+            account = (Account)((SnapshotOffer)msg).snapshot();
+        } else {
+            System.err.println("onReceiveRecover unknown type! Type:"+msg.getClass());
+        }
+    }
+
+    public void onReceiveCommand(Object msg) {
+        System.out.println(msg);
+        if (msg instanceof Transfer) {
+            // Translate Transfer to Records
+            final List<Record> events=new LinkedList<>();
+
+            if(msg instanceof AccountTransfer){
+                final AccountTransfer accTran = (Transfer)msg;
+                events.add(new Record(
+                        accTran.amount.negate(),
+                        accTran.fromAccountId,
+                        "Transfer to "+tran.toAccountId));
+                events.add(new Record(
+                        accTran.amount,
+                        accTran.toAccountId,
+                        "Transfer from "+tran.fromAccountId));
+            } else if(msg instanceof CashTransfer){
+                boolean isDeposit = msg instanceof CashDeposit;
+                CashTransfer cashTran=(CashTransfer)msg;
+                events.add(new Record(isDeposit
+                        ?cashTran.amount
+                        :cashTran.amount.negate(),
+                        cashTran.toAccountId,"Cash "+(isDeposit?"deposit":"withdrawal")+" to "+cashTran.toAccountId));
+            }
+
+            // Persist the Records
+            persist(evants, new Procedure<Record>() {
+                public void apply(Record record) throws Exception {
+                    state.update(record);
+                    if (evt.equals(events.last())) {
+                        getContext().system().eventStream().publish(evt);
+                    }
+                }
+            });
+        } else if (msg.equals("snap")) {
+            // IMPORTANT: create a copy of snapshot
+            // because the Map is mutable !!!
+            // FIXME break account into its own Persistent actor, onew per account
+            HashMap<Long, Account> copy = new HashMap();
+            for(Map.Entry<Long, Account> each:state.entrySet()){
+                // Copy Mutable Account, but Long which is immutable
+                copy.put(each.getKey(),each.getValue().copy());
+            }
+            saveSnapshot(copy);
+        } else if (msg.equals("print")) {
+            System.out.println(state);
+        } else if (msg.equals("nuke")) {
+            state = new ConcurrentHashMap<Long, Account>();
+        } else {
+            System.err.println("What is ");
+        }
+    }
+}
+
 class ExampleProcessor extends UntypedEventsourcedProcessor {
     private ConcurrentHashMap<Long,Account> state = new ConcurrentHashMap<Long, Account>();
 
