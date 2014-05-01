@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedExample.java" afterPath="$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedExample.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RUNNING_PID" afterPath="$PROJECT_DIR$/RUNNING_PID" />
     </list>
     <ignored path="OpKoKo2014.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -220,8 +221,8 @@
     <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
     <file path="$PROJECT_DIR$/../pharmaconnect/RexConnect/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
     <file path="$PROJECT_DIR$/../pharmaconnect/VBIntegration/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
-    <file path="/EventsourcedExample.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398933993161" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398933833728" ignored="false" />
+    <file path="/EventsourcedExample.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398952758652" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398952855195" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,10 +339,10 @@
       <file leaf-file-name="EventsourcedExample.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="362" selection-end="1260" vertical-scroll-proportion="0.020661157">
+            <state line="119" column="0" selection-start="3076" selection-end="6121" vertical-scroll-proportion="0.041322313">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3993#4008#0" expanded="true" />
+                <element signature="e#3211#3226#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -761,17 +762,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/std/StdSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="42" selection-start="2637" selection-end="2637" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1622#1652#0" expanded="false" />
-            <element signature="e#1888#1918#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/jsontype/TypeSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="22" selection-start="660" selection-end="660" vertical-scroll-proportion="0.31484258">
@@ -882,12 +872,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2826" column="30" selection-start="128626" selection-end="128626" vertical-scroll-proportion="0.35507247">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="362" selection-end="1260" vertical-scroll-proportion="0.020661157">
+        <state line="119" column="0" selection-start="3076" selection-end="6121" vertical-scroll-proportion="0.041322313">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3993#4008#0" expanded="true" />
+            <element signature="e#3211#3226#0" expanded="true" />
           </folding>
         </state>
       </provider>

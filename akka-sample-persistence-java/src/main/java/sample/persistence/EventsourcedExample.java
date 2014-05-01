@@ -4,47 +4,18 @@ package sample.persistence;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import akka.actor.*;
 import akka.japi.Procedure;
 import akka.persistence.*;
 import static java.util.Arrays.asList;
-
-abstract class TransactionPart implements Serializable {
-    public final String note;
-    public final BigDecimal amount;
-
-    public TransactionPart(BigDecimal amount, String note) {
-        assert null!=amount :"Amount should not be null";
-        assert amount.compareTo(BigDecimal.ZERO)>0 :"Amount should not be greater than zero.";
-        assert null!=note :"Note should not be null";
-        this.amount = amount;
-        this.note = note;
-    }
-
-    @Override
-    public String toString() {
-        return "TransactionPart{" +
-                "note='" + note + '\'' +
-                ", amount=" + amount +
-                '}';
-    }
-}
-
-final class Debit extends TransactionPart {
-    Debit(BigDecimal amount, String note) {
-        super(amount, note);
-    }
-}
-
-final class Credit extends TransactionPart {
-    Credit(BigDecimal amount, String note) {
-        super(amount, note);
-    }
-}
 
 abstract class Transfer {
     public final BigDecimal amount;
@@ -158,7 +129,8 @@ class ExampleProcessor extends UntypedEventsourcedProcessor {
         if (msg instanceof Transfer) {
             state.update((Transfer) msg);
         } else if (msg instanceof SnapshotOffer) {
-            state = (ConcurrentHashMap<Long,Account>)((SnapshotOffer)msg).snapshot();
+            Map<Long,Account> backup = (HashMap<Long,Account>)((SnapshotOffer)msg).snapshot();
+            state = new ConcurrentHashMap<Long, Account>(backup);
         } else {
             System.err.println("onReceiveRecover unknown type! Type:"+msg.getClass());
         }
@@ -167,32 +139,57 @@ class ExampleProcessor extends UntypedEventsourcedProcessor {
     public void onReceiveCommand(Object msg) {
         System.out.println(msg);
         if (msg instanceof Transfer) {
-            final Transfer tran = (Transfer)msg;
-            final Debit debit = new Debit(tran.amount,"Transfer to "+tran.toAccountId);
-            final Credit credit = new Credit(tran.amount,"Transfer from "+tran.fromAccountId);
+            // Translate Transfer to Records
+            final List<Record> events=new LinkedList<>();
 
-            persist(asList(evt1, evt2), new Procedure<Evt>() {
-                public void apply(Evt evt) throws Exception {
-                    state.update(evt);
-                    if (evt.equals(evt2)) {
+            if(msg instanceof AccountTransfer){
+                final AccountTransfer accTran = (Transfer)msg;
+                events.add(new Record(
+                        accTran.amount.negate(),
+                        accTran.fromAccountId,
+                        "Transfer to "+tran.toAccountId));
+                events.add(new Record(
+                        accTran.amount,
+                        accTran.toAccountId,
+                        "Transfer from "+tran.fromAccountId));
+            } else if(msg instanceof CashTransfer){
+                boolean isDeposit = msg instanceof CashDeposit;
+                CashTransfer cashTran=(CashTransfer)msg;
+                events.add(new Record(isDeposit
+                        ?cashTran.amount
+                        :cashTran.amount.negate(),
+                        cashTran.toAccountId,"Cash "+(isDeposit?"deposit":"withdrawal")+" to "+cashTran.toAccountId));
+            }
+
+            // Persist the Records
+            persist(evants, new Procedure<Record>() {
+                public void apply(Record record) throws Exception {
+                    state.update(record);
+                    if (evt.equals(events.last())) {
                         getContext().system().eventStream().publish(evt);
                     }
                 }
             });
-        } if (msg instanceof CashWithdrawal) {
-
         } else if (msg.equals("snap")) {
-                // IMPORTANT: create a copy of snapshot
-                // because Account is mutable !!!
-                saveSnapshot(state.copy());
-            } else if (msg.equals("print")) {
-                System.out.println(state);
-            } else if (msg.equals("nuke")) {
-                state = new Account();
+            // IMPORTANT: create a copy of snapshot
+            // because the Map is mutable !!!
+            // FIXME break account into its own Persistent actor, onew per account
+            HashMap<Long, Account> copy = new HashMap();
+            for(Map.Entry<Long, Account> each:state.entrySet()){
+                // Copy Mutable Account, but Long which is immutable
+                copy.put(each.getKey(),each.getValue().copy());
             }
+            saveSnapshot(copy);
+        } else if (msg.equals("print")) {
+            System.out.println(state);
+        } else if (msg.equals("nuke")) {
+            state = new ConcurrentHashMap<Long, Account>();
+        } else {
+            System.err.println("What is ");
         }
     }
 }
+
 //#eventsourced-example
 
 public class EventsourcedExample {
@@ -203,14 +200,12 @@ public class EventsourcedExample {
 
         processor.tell("nuke", null);
         processor.tell("print", null);
-        //
-        processor.tell(new Cmd("foo"), null);
-        //
-        processor.tell(new Cmd("baz"), null);
-        //
-        processor.tell(new Cmd("bar"), null);
-        //processor.tell("snap", null);
-        //processor.tell(new TransactionPart("buzz"), null);
+        //Sätt in lite pengar
+        processor.tell(new CashDeposit(BigDecimal.TEN,4711L), null);
+        processor.tell(new CashDeposit(BigDecimal.ONE,1337L), null);
+        // Gör en överföring
+        processor.tell(new AccountTransfer(BigDecimal.ONE,4711L,1337L), null);
+        processor.tell("snap", null);
         processor.tell("print", null);
 
         Thread.sleep(1000);
@@ -218,13 +213,14 @@ public class EventsourcedExample {
     }
 }
 
+// Not used right now
 class RandomNumberGenerator{
     private final SecureRandom sr;
     private final int seedIter;
     private final int width;
     private volatile int count=0;
 
-    public RandomNumberGenerator(int width){
+    public RandomNumberGenerator(int width) throws NoSuchAlgorithmException {
         assert width > 0 : "Width "+width+" must be greater than zero";
         sr = SecureRandom.getInstance("SHA1PRNG");
         seedIter = sr.nextInt(width/2+1)+7;
