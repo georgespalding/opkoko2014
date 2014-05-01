@@ -20,7 +20,7 @@ abstract class TransactionPart implements Serializable {
     public TransactionPart(BigDecimal amount, String note) {
         assert null!=amount :"Amount should not be null";
         assert amount.compareTo(BigDecimal.ZERO)>0 :"Amount should not be greater than zero.";
-        assert null!=amount :"Note should not be null";
+        assert null!=note :"Note should not be null";
         this.amount = amount;
         this.note = note;
     }
@@ -46,15 +46,42 @@ final class Credit extends TransactionPart {
     }
 }
 
-final class Transaction{
+abstract class Transfer {
     public final BigDecimal amount;
-    public final long fromAccountId;
     public final long toAccountId;
 
-    Transaction(BigDecimal amount, long fromAccountId, long toAccountId) {
+    Transfer(BigDecimal amount, long toAccountId) {
+        assert null!=amount :"Amount should not be null";
+        assert amount.compareTo(BigDecimal.ZERO)>0 :"Amount should not be greater than zero.";
         this.amount = amount;
-        this.fromAccountId = fromAccountId;
         this.toAccountId = toAccountId;
+    }
+}
+
+final class AccountTransfer extends Transfer{
+    public final long fromAccountId;
+
+    AccountTransfer(BigDecimal amount, long fromAccountId, long toAccountId) {
+        super(amount, toAccountId);
+        this.fromAccountId = fromAccountId;
+    }
+}
+
+abstract class CashTransfer extends Transfer{
+    CashTransfer(BigDecimal amount, long toAccountId) {
+        super(amount, toAccountId);
+    }
+}
+
+final class CashWithdrawal extends CashTransfer {
+    CashWithdrawal(BigDecimal amount, long toAccountId) {
+        super(amount, toAccountId);
+    }
+}
+
+final class CashDeposit extends CashTransfer {
+    CashDeposit(BigDecimal amount, long accountId) {
+        super(amount, accountId);
     }
 }
 
@@ -128,19 +155,22 @@ class ExampleProcessor extends UntypedEventsourcedProcessor {
 
     public void onReceiveRecover(Object msg) {
         System.out.println(msg);
-        if (msg instanceof Record) {
-            state.update((Record) msg);
+        if (msg instanceof Transfer) {
+            state.update((Transfer) msg);
         } else if (msg instanceof SnapshotOffer) {
-            state = (Account)((SnapshotOffer)msg).snapshot();
+            state = (ConcurrentHashMap<Long,Account>)((SnapshotOffer)msg).snapshot();
+        } else {
+            System.err.println("onReceiveRecover unknown type! Type:"+msg.getClass());
         }
     }
 
     public void onReceiveCommand(Object msg) {
         System.out.println(msg);
-        if (msg instanceof Cmd) {
-            final String data = ((Cmd)msg).getData();
-            final Evt evt1 = new Evt(data + "-" + getNumEvents());
-            final Evt evt2 = new Evt(data + "-" + (getNumEvents() + 1));
+        if (msg instanceof Transfer) {
+            final Transfer tran = (Transfer)msg;
+            final Debit debit = new Debit(tran.amount,"Transfer to "+tran.toAccountId);
+            final Credit credit = new Credit(tran.amount,"Transfer from "+tran.fromAccountId);
+
             persist(asList(evt1, evt2), new Procedure<Evt>() {
                 public void apply(Evt evt) throws Exception {
                     state.update(evt);
@@ -149,8 +179,9 @@ class ExampleProcessor extends UntypedEventsourcedProcessor {
                     }
                 }
             });
-        } else {
-            if (msg.equals("snap")) {
+        } if (msg instanceof CashWithdrawal) {
+
+        } else if (msg.equals("snap")) {
                 // IMPORTANT: create a copy of snapshot
                 // because Account is mutable !!!
                 saveSnapshot(state.copy());
