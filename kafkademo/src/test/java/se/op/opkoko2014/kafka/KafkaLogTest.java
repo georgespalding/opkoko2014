@@ -23,7 +23,9 @@ import ch.qos.logback.classic.LoggerContext;
  */
 public class KafkaLogTest {
     static final org.slf4j.Logger slf4jLogger=LoggerFactory.getLogger(KafkaLogTest.class);
-
+    private static final String[] nouns = {"Apples","Bodrum","Clustering","DDD"};
+    private static final String[] verbs = {"rules","tastes","rocks","sucks"};
+    private static final String[] adverbs = {"tomorrow","everywhere","big time","today"};
     private static final int NTHREDS = 10;
 
     public static void main(String[] args) throws InterruptedException, NoSuchAlgorithmException {
@@ -42,35 +44,43 @@ public class KafkaLogTest {
         //static final Logger log = Logger.getLogger("test");
 
         ExecutorService executor = Executors.newFixedThreadPool(NTHREDS);
-        List<Future<Long>> list = new LinkedList<Future<Long>>();
+        List<Future<Void>> list = new LinkedList<>();
         for (int i = 0; i < 20; i++) {
             final int ci=i;
-            Callable worker = new Callable(){
+            Callable<Void> worker = new Callable<Void>(){
 
                 @Override
-                public Double call() throws Exception {
+                public Void call() throws Exception {
                     final String userid = ""+sr.nextInt(17);
                     try{
                         MDC.getMDCAdapter().put("userid", userid);
                         MDC.getMDCAdapter().put("clientip", "192.168.47."+sr.nextInt(255));
+                        MDC.getMDCAdapter().put("msgid", ""+ci);
                         Double d = sr.nextDouble();
-                        slf4jLogger.info("Message-{0}: {1}",ci,d);
-                        return d;
+                        String msg= String.format("%s %s %s %f",
+                                nouns[sr.nextInt(nouns.length)],
+                                verbs[sr.nextInt(verbs.length)],
+                                adverbs[sr.nextInt(adverbs.length)],d);
+
+                        slf4jLogger.info(msg);
+                        return null;
                     }finally{
-                        MDC.getMDCAdapter().remove(userid);
-                        slf4jLogger.debug("leaving");
+                        MDC.getMDCAdapter().remove("userid");
+                        MDC.getMDCAdapter().remove("clientip");
+                        MDC.getMDCAdapter().remove("msgid");
+                        //slf4jLogger.debug("leaving");
                     }
                 }
             };
-            Future<Long> submit = executor.submit(worker);
+            Future<Void> submit = executor.submit(worker);
             list.add(submit);
         }
         long sum = 0;
         System.out.println(list.size());
-        // now retrieve the result
-        for (Future<Long> future : list) {
+        // now retrieve the result (Just ensure they all have completed)
+        for (Future<Void> future : list) {
             try {
-                sum += future.get();
+                future.get();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {
@@ -78,7 +88,9 @@ public class KafkaLogTest {
             }
         }
         executor.shutdown();
+        System.err.println("Executor shutdown");
         LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
         loggerContext.stop();
+        System.err.println("Stopped executor");
     }
 }

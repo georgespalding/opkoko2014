@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedEx2.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/SampleNuke" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kafkademo/ApacheKafka OpKoKo2014 mkI.key/Data/st2-1554.jpg" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/akkapersistencedemo/akka-persistence-opkoko2014.key/Data/st0-180.jpg" afterPath="$PROJECT_DIR$/akkapersistencedemo/akka-persistence-opkoko2014.key/Data/st0-208.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/akkapersistencedemo/akka-persistence-opkoko2014.key/Metadata/Properties.plist" afterPath="$PROJECT_DIR$/akkapersistencedemo/akka-persistence-opkoko2014.key/Metadata/Properties.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kafkademo/ApacheKafka OpKoKo2014 mkI.key/Metadata/Properties.plist" afterPath="$PROJECT_DIR$/kafkademo/ApacheKafka OpKoKo2014 mkI.key/Metadata/Properties.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/akkapersistencedemo/akka-persistence-opkoko2014.key/preview-micro.jpg" afterPath="$PROJECT_DIR$/akkapersistencedemo/akka-persistence-opkoko2014.key/preview-micro.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/akkapersistencedemo/akka-persistence-opkoko2014.key/preview-web.jpg" afterPath="$PROJECT_DIR$/akkapersistencedemo/akka-persistence-opkoko2014.key/preview-web.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/akkapersistencedemo/akka-persistence-opkoko2014.key/preview.jpg" afterPath="$PROJECT_DIR$/akkapersistencedemo/akka-persistence-opkoko2014.key/preview.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedExample.java" afterPath="$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/KafkaAppender.java" afterPath="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/KafkaAppender.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kafkademo/src/test/java/se/op/opkoko2014/kafka/KafkaLogTest.java" afterPath="$PROJECT_DIR$/kafkademo/src/test/java/se/op/opkoko2014/kafka/KafkaLogTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java" afterPath="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RUNNING_PID" afterPath="$PROJECT_DIR$/RUNNING_PID" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kafkademo/src/test/resources/kafka_properties.properties" afterPath="$PROJECT_DIR$/kafkademo/src/test/resources/kafka_properties.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OpKoKo2014.iws" />
@@ -210,9 +219,9 @@
     <file path="/JacksonKafkaSerializer.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398791189360" ignored="false" />
     <file path="/LoggingEventToJsonEncoder.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398805059150" ignored="false" />
     <file path="/logback-test.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398802886867" ignored="false" />
-    <file path="/KafkaLogTest.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398852297220" ignored="false" />
-    <file path="/kafka_properties.properties" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398803738731" ignored="false" />
-    <file path="/KafkaAppender.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398803542953" ignored="false" />
+    <file path="/KafkaLogTest.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1399102851629" ignored="false" />
+    <file path="/kafka_properties.properties" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1399099080793" ignored="false" />
+    <file path="/KafkaAppender.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1399102469436" ignored="false" />
     <file path="/LoggingEventToJacksonEncoder.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398847303394" ignored="false" />
     <file path="$PROJECT_DIR$/../psrexserver/PharmaCommon-ejb/src/main/java/se/pharmasolutions/pi/exception/ExceptionTranslator.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398840694775" ignored="false" />
     <file path="/ExceptionTranslator.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398840693526" ignored="false" />
@@ -224,7 +233,7 @@
     <file path="$PROJECT_DIR$/../pharmaconnect/ApoTjIntegration/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
     <file path="$PROJECT_DIR$/../pharmaconnect/RexConnect/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
     <file path="$PROJECT_DIR$/../pharmaconnect/VBIntegration/pom.xml" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398860565507" ignored="false" />
-    <file path="/EventsourcedExample.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398961007859" ignored="false" />
+    <file path="/EventsourcedExample.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1399015623620" ignored="false" />
     <file path="/EventsourcedEx2.java" changelist="dd81be2a-8efe-4126-a635-4a1bdce4a8dd" time="1398957368563" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -286,13 +295,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EventsourcedExample.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedExample.java">
+      <file leaf-file-name="LoggingEventToJacksonEncoder.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="16" selection-start="5883" selection-end="5883" vertical-scroll-proportion="0.58915836">
+            <state line="22" column="58" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KafkaAppender.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/KafkaAppender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="54" selection-start="3110" selection-end="3110" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KafkaLogTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kafkademo/src/test/java/se/op/opkoko2014/kafka/KafkaLogTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="94" column="0" selection-start="3988" selection-end="3988" vertical-scroll-proportion="0.7058824">
+              <folding>
+                <element signature="e#2082#3225#0" expanded="true" />
+                <element signature="e#2094#2100#0" expanded="true" />
+                <element signature="e#3210#3211#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kafka_properties.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kafkademo/src/test/resources/kafka_properties.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="52" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -322,15 +364,15 @@
         <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJsonEncoder.java" />
         <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToXstreamJettisonEncoder.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/kafkademo/src/test/resources/kafka_properties.properties" />
         <option value="$PROJECT_DIR$/kafkademo/pom.xml" />
-        <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/KafkaAppender.java" />
         <option value="$PROJECT_DIR$/kafkademo/src/test/java/KafkaLogTest.java" />
-        <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java" />
-        <option value="$PROJECT_DIR$/kafkademo/src/test/java/se/op/opkoko2014/kafka/KafkaLogTest.java" />
         <option value="$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventSourcedEx2.java" />
         <option value="$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedEx2.java" />
         <option value="$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedExample.java" />
+        <option value="$PROJECT_DIR$/kafkademo/src/test/resources/kafka_properties.properties" />
+        <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java" />
+        <option value="$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/KafkaAppender.java" />
+        <option value="$PROJECT_DIR$/kafkademo/src/test/java/se/op/opkoko2014/kafka/KafkaLogTest.java" />
       </list>
     </option>
   </component>
@@ -426,6 +468,158 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="OpKoKo2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpKoKo2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpKoKo2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kafkademo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpKoKo2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpKoKo2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kafkademo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpKoKo2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpKoKo2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kafkademo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kafka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpKoKo2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpKoKo2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kafkademo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kafka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpKoKo2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpKoKo2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kafkademo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kafka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpKoKo2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpKoKo2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kafkademo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApacheKafka OpKoKo2014 mkI.key" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -668,8 +862,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.6710875" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20291777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2998565" sideWeight="0.57824934" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42175066" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.241033" sideWeight="0.5636605" order="2" side_tool="false" content_ui="combo" />
@@ -741,22 +935,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/std/StdKeySerializers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="24" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#464#494#0" expanded="false" />
-            <element signature="e#698#728#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/JsonSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="19" selection-start="4516" selection-end="4524" vertical-scroll-proportion="-8.56" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar!/com/fasterxml/jackson/databind/ser/std/NullSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="45" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0" />
@@ -765,13 +943,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2-sources.jar!/ch/qos/logback/classic/spi/ILoggingEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="19" selection-start="1413" selection-end="1430" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="2333" selection-end="2333" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -786,13 +957,6 @@
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/io/Serializable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="138" column="64" selection-start="5997" selection-end="6038" vertical-scroll-proportion="0.1891892" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kafkademo/src/test/java/se/op/opkoko2014/kafka/KafkaLogTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="64" selection-start="1527" selection-end="1535" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/Random.java">
@@ -842,11 +1006,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedExample.java">
+    <entry file="file://$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/LoggingEventToJacksonEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="16" selection-start="5883" selection-end="5883" vertical-scroll-proportion="0.58915836">
+        <state line="22" column="58" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/java/sample/persistence/EventsourcedExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="31" selection-start="2480" selection-end="2480" vertical-scroll-proportion="0.37327823">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kafkademo/src/test/resources/kafka_properties.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="52" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kafkademo/src/main/java/se/op/opkoko2014/kafka/log/KafkaAppender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="54" selection-start="3110" selection-end="3110" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kafkademo/src/test/java/se/op/opkoko2014/kafka/KafkaLogTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="0" selection-start="3988" selection-end="3988" vertical-scroll-proportion="0.7058824">
+          <folding>
+            <element signature="e#2082#3225#0" expanded="true" />
+            <element signature="e#2094#2100#0" expanded="true" />
+            <element signature="e#3210#3211#0" expanded="true" />
           </folding>
         </state>
       </provider>

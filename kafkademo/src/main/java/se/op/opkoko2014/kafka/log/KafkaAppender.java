@@ -75,7 +75,7 @@ public class KafkaAppender extends UnsynchronizedAppenderBase<ILoggingEvent> {
             }
         }
 
-        ProducerConfig config=new ProducerConfig(props);
+        ProducerConfig config = new ProducerConfig(props);
         producer = new Producer<String,ILoggingEvent>(config);
         super.start();
     }
@@ -84,6 +84,7 @@ public class KafkaAppender extends UnsynchronizedAppenderBase<ILoggingEvent> {
     public void stop() {
         super.stop();
         producer.close();
+        System.err.println("Stopped Kafka Log Appender");
     }
 
     protected String getTopic(ILoggingEvent e){

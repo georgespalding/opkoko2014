@@ -88,7 +88,7 @@ class AccountProcessor extends UntypedEventsourcedProcessor {
     private Account account = new Account();
 
     public void onReceiveRecover(Object msg) {
-        System.out.println(msg);
+        System.out.println("recover:"+msg);
         if (msg instanceof Record) {
             account.updateBalance((Record) msg);
         } else if (msg instanceof SnapshotOffer) {
@@ -157,33 +157,33 @@ public class EventsourcedExample {
         final ActorRef processor = system.actorOf(Props.create(AccountProcessor.class), "processor-4-java");
         final ActorRef sender = system.actorOf(Props.create(ExampleDestination.class), "sender-4-java");
 
-
         processor.tell("print", null);
 
         // Sätt in
-        //processor.tell(BigDecimal.TEN, sender);
+        //processor.tell(BigDecimal.valueOf(100), sender);
 
         // Ta ut
-        processor.tell(BigDecimal.valueOf(-21), sender);
+//        processor.tell(BigDecimal.valueOf(-400), sender);
 
         // Sätt in och ta ut i en batch
-        processor.tell(new BigDecimal[]{
-                BigDecimal.valueOf(-21),
-                BigDecimal.valueOf(11),
-                BigDecimal.valueOf(1)}, sender);
+//        processor.tell(new BigDecimal[]{
+//                BigDecimal.valueOf(-21),
+//                BigDecimal.valueOf(11),
+//                BigDecimal.valueOf(1)}, sender);
 
         // Sätt in och ta ut i en batch
-        processor.tell(new BigDecimal[]{
-                BigDecimal.valueOf(-21),
-                BigDecimal.valueOf(111),
-                BigDecimal.valueOf(1)}, sender);
+//        processor.tell(new BigDecimal[]{
+//                BigDecimal.valueOf(-21),
+//                BigDecimal.valueOf(111),
+//                BigDecimal.valueOf(1)}, sender);
 
-        processor.tell("hidetran", null);
-        processor.tell("print", null);
-        processor.tell("showtran", null);
+//        processor.tell("hidetran", null);
+//        processor.tell("print", null);
+//        processor.tell("showtran", null);
 
         // Spara en snapshot
-        // processor.tell("snap", null);
+//        processor.tell("snap", null);
+    processor.tell("print", null);
 
         Thread.sleep(1000);
         system.shutdown();
