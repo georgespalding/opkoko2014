@@ -9,15 +9,15 @@
     </appender>
 
     <appender name="KAFKA" class="se.op.opkoko2014.kafka.log.KafkaAppender">
+        <!-- KeyLayout is used to create a partitioning key for the message logged.-->
         <keyLayout class="ch.qos.logback.classic.PatternLayout">
             <pattern>%t</pattern>
         </keyLayout>
+        <!-- TopicLayout is used to create a topic for the message logged.-->
         <topicLayout class="ch.qos.logback.classic.PatternLayout">
             <pattern>%contextName</pattern>
         </topicLayout>
         <kafkaProperties>classpath:kafka_properties.properties</kafkaProperties>
-        <encoder>
-        </encoder>
     </appender>
 
     <root level="debug">

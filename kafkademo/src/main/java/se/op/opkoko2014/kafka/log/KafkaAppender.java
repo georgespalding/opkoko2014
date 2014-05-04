@@ -76,7 +76,7 @@ public class KafkaAppender extends UnsynchronizedAppenderBase<ILoggingEvent> {
         }
 
         ProducerConfig config = new ProducerConfig(props);
-        producer = new Producer<String,ILoggingEvent>(config);
+        producer = new Producer<>(config);
         super.start();
     }
 

@@ -42,7 +42,7 @@ public class LoggingEventToJacksonEncoder implements Encoder<ILoggingEvent>{
     @Override
     public byte[] toBytes(ILoggingEvent iLoggingEvent) {
         try {
-            return mapper.writeValueAsBytes(iLoggingEvent);
+            return mapper.writeValueAsBytes(iLoggingEvent.getLoggerContextVO());
         } catch (JsonProcessingException e) {
             throw new RuntimeException("Failed to serialize iLoggingEvent:"+iLoggingEvent+" to string.", e);
         }

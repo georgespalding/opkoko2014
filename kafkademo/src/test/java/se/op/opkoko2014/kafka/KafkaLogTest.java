@@ -4,15 +4,23 @@ import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Observable;
+import java.util.Observer;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Ignore;
+import org.junit.Test;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
 import org.slf4j.bridge.SLF4JBridgeHandler;
 import ch.qos.logback.classic.LoggerContext;
+import ch.qos.logback.classic.spi.ILoggingEvent;
+import ch.qos.logback.classic.spi.LoggingEvent;
 
 /**
  * Created with IntelliJ IDEA.
@@ -27,8 +35,11 @@ public class KafkaLogTest {
     private static final String[] verbs = {"rules","tastes","rocks","sucks"};
     private static final String[] adverbs = {"tomorrow","everywhere","big time","today"};
     private static final int NTHREDS = 10;
+    private static ExecutorService executor;
+    private static List<Future<String>> work;
 
-    public static void main(String[] args) throws InterruptedException, NoSuchAlgorithmException {
+    @BeforeClass
+    public static void setupLogging() throws InterruptedException, NoSuchAlgorithmException {
         // OR -Djava.util.logging.config.file=log.properties
         //# register SLF4JBridgeHandler as handler for the j.u.l. root logger
         //#handlers = org.slf4j.bridge.SLF4JBridgeHandler
@@ -40,30 +51,38 @@ public class KafkaLogTest {
         // the initialization phase of your application
         SLF4JBridgeHandler.install();
 
-        final SecureRandom sr=SecureRandom.getInstance("SHA1PRNG");
         //static final Logger log = Logger.getLogger("test");
+    }
+    @BeforeClass
+    public static void setupExecutor() throws InterruptedException, NoSuchAlgorithmException {
+        executor = Executors.newFixedThreadPool(NTHREDS);
+        work = new LinkedList<>();
+    }
 
-        ExecutorService executor = Executors.newFixedThreadPool(NTHREDS);
-        List<Future<Void>> list = new LinkedList<>();
+    @Ignore
+    @Test
+    public void testLog() throws NoSuchAlgorithmException {
+        final SecureRandom  finalSr = SecureRandom.getInstance("SHA1PRNG");
         for (int i = 0; i < 200; i++) {
             final int ci=i;
-            Callable<Void> worker = new Callable<Void>(){
+            Callable<String> worker = new Callable<String>(){
 
                 @Override
-                public Void call() throws Exception {
-                    final String userid = ""+sr.nextInt(17);
+                public String call() throws Exception {
                     try{
+                        // TODO capture values to be asserted
+                        final String userid = ""+finalSr.nextInt(17);
                         MDC.getMDCAdapter().put("userid", userid);
-                        MDC.getMDCAdapter().put("clientip", "192.168.47."+sr.nextInt(255));
+                        MDC.getMDCAdapter().put("clientip", "192.168.47."+finalSr.nextInt(255));
                         MDC.getMDCAdapter().put("msgid", ""+ci);
-                        Double d = sr.nextDouble();
+                        Double d = finalSr.nextDouble();
                         String msg= String.format("%s %s %s %f",
-                                nouns[sr.nextInt(nouns.length)],
-                                verbs[sr.nextInt(verbs.length)],
-                                adverbs[sr.nextInt(adverbs.length)],d);
+                                nouns[finalSr.nextInt(nouns.length)],
+                                verbs[finalSr.nextInt(verbs.length)],
+                                adverbs[finalSr.nextInt(adverbs.length)],d);
 
                         slf4jLogger.info(msg);
-                        return null;
+                        return msg;
                     }finally{
                         MDC.getMDCAdapter().remove("userid");
                         MDC.getMDCAdapter().remove("clientip");
@@ -72,21 +91,25 @@ public class KafkaLogTest {
                     }
                 }
             };
-            Future<Void> submit = executor.submit(worker);
-            list.add(submit);
+            Future<String> submit = executor.submit(worker);
+            work.add(submit);
         }
-        long sum = 0;
-        System.out.println(list.size());
+
         // now retrieve the result (Just ensure they all have completed)
-        for (Future<Void> future : list) {
+        for (Future<String> future : work) {
             try {
-                future.get();
+                String result = future.get();
+                //TODO assert captured data and ensure that it is correct in the message that was logged.
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {
                 e.printStackTrace();
             }
         }
+    }
+
+    @AfterClass
+    public static void afterClass(){
         executor.shutdown();
         System.err.println("Executor shutdown");
         LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();

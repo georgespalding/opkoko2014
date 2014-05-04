@@ -125,7 +125,7 @@
 
             <dependency>
                 <groupId>com.typesafe.akka</groupId>
-                <artifactId>akka-persistence-experimental</artifactId>
+                <artifactId>akka-persistence-experimental_${scala.version}</artifactId>
                 <version>${akka.version}</version>
             </dependency>
 

@@ -43,16 +43,24 @@ public class LoggingEventToJacksonEncoder implements Encoder<ILoggingEvent>{
         });
         mapper.registerModule(testModule);
 
-        verifiableProperties.getMap("hej",null);
-
-        mapper.enable(SerializationFeature.INDENT_OUTPUT);
-
+        for(SerializationFeature ft:SerializationFeature.values()){
+            final String propname = ft.getClass().getName()+"."+ft.name();
+            if(verifiableProperties.containsKey(propname)){
+                final String value = verifiableProperties.getString(propname);
+                if(!ft.enabledByDefault() && Boolean.valueOf(value)){
+                    mapper.enable(ft);
+                }
+                if(ft.enabledByDefault() && !Boolean.valueOf(value)){
+                    mapper.disable(ft);
+                }
+            }
+        }
     }
+
     @Override
     public byte[] toBytes(ILoggingEvent iLoggingEvent) {
-
         try {
-            return mapper.writeValueAsBytes(iLoggingEvent);
+            return mapper.writeValueAsBytes(iLoggingEvent.getLoggerContextVO());
         } catch (JsonProcessingException e) {
             throw new RuntimeException("Failed to serialize iLoggingEvent:"+iLoggingEvent+" to string.", e);
         }
