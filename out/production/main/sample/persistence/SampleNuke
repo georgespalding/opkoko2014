@@ -1,9 +1,0 @@
-package sample.persistence;
-
-
-public class SampleNuke {
-    public static void main(String... args) throws Exception {
-        //TODO
-        System.err.println("TODO");
-    }
-}

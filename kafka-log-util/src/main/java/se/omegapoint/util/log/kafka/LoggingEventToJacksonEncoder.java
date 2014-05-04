@@ -1,4 +1,4 @@
-package se.op.opkoko2014.kafka.log;
+package se.omegapoint.util.log.kafka;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -11,6 +11,7 @@ import com.fasterxml.jackson.databind.module.SimpleModule;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import kafka.serializer.Encoder;
 import kafka.utils.VerifiableProperties;
+import scala.Function1;
 
 /**
  * Created with IntelliJ IDEA.
@@ -18,10 +19,16 @@ import kafka.utils.VerifiableProperties;
  * Date: 29/04/14
  * Time: 18:51
  *
+ * @TODO Make indentation configurable
+ * @TODO Make type selection configurable (types to exclude available in current classpath)
+ * @TODO Make field selection configurable (which fields in ILoggoingEvent to exclude)
+ *
+ * @TODO Add Message Mac:ing functionality:
  * each message includes reference to previous events mac,
  * The serialized mac and event is hashed and that mac is added to the next message.
  * When started the previous mac is read from disk.
  * When stopped, the last mac is written to disk.
+ * @TODO Webapp to view/process logs?!
  */
 public class LoggingEventToJacksonEncoder implements Encoder<ILoggingEvent>{
     private final ObjectMapper mapper;
@@ -36,11 +43,14 @@ public class LoggingEventToJacksonEncoder implements Encoder<ILoggingEvent>{
         });
         mapper.registerModule(testModule);
 
-        mapper.enable(SerializationFeature.INDENT_OUTPUT);
-    }
+        verifiableProperties.getMap("hej",null);
 
+        mapper.enable(SerializationFeature.INDENT_OUTPUT);
+
+    }
     @Override
     public byte[] toBytes(ILoggingEvent iLoggingEvent) {
+
         try {
             return mapper.writeValueAsBytes(iLoggingEvent);
         } catch (JsonProcessingException e) {

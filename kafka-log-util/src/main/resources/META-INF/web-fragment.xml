@@ -1,0 +1,61 @@
+<web-fragment xmlns="http://java.sun.com/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="
+        http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-fragment_3_0.xsd" version="3.0">
+    <description>This is the KafkaLogger web fragment that adds support for logging to Apache Kafka using Slf4j/logback</description>
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Status of logger</web-resource-name>
+            <url-pattern>/kafkaLoggerFragment/*</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+
+        <auth-constraint>
+            <description/>
+            <role-name>ADMIN</role-name>
+        </auth-constraint>
+
+        <user-data-constraint>
+            <description/>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+
+    <login-config>
+        <auth-method>BASIC</auth-method>
+    </login-config>
+
+    <security-role>
+        <description/>
+        <role-name>ADMIN</role-name>
+    </security-role>
+
+    <listener>
+        <display-name>Djur i hatt</display-name>
+        <listener-class>HTMLConverter</listener-class>
+    </listener>
+
+    <filter>
+        <filter-name>Gris i plommonstop</filter-name>
+        <filter-class>ch.qos.logback.classic.helpers.MDCInsertingServletFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>Gris i plommonstop</filter-name>
+        <url-pattern>*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>Tupp i fez</servlet-name>
+        <servlet-class>ch.qos.logback.classic.ViewStatusMessagesServlet</servlet-class>
+        <security-role-ref>
+            <role-name>ADMIN</role-name>
+        </security-role-ref>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Tupp i fez</servlet-name>
+        <url-pattern>/kafkaLoggerFragment/viewStatus</url-pattern>
+    </servlet-mapping>
+</web-fragment>

@@ -17,19 +17,22 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="false">
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="akkapersistencedemo" />
+        <module name="akka-sample-persistence-java" />
+        <module name="kafka-log-util" />
         <module name="kafkademo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="akka-sample-persistence-java" target="1.7" />
       <module name="akkapersistencedemo" target="1.7" />
+      <module name="kafka-log-util" target="1.7" />
       <module name="kafkademo" target="1.7" />
-      <module name="OpKoKo2014" target="1.7" />
+      <module name="opkoko2014" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

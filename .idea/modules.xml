@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/OpKoKo2014.iml" filepath="$PROJECT_DIR$/OpKoKo2014.iml" />
-      <module fileurl="file://$PROJECT_DIR$/akkapersistencedemo/akkapersistencedemo.iml" filepath="$PROJECT_DIR$/akkapersistencedemo/akkapersistencedemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/akka-sample-persistence-java/akka-sample-persistence-java.iml" filepath="$PROJECT_DIR$/akka-sample-persistence-java/akka-sample-persistence-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka-log-util/kafka-log-util.iml" filepath="$PROJECT_DIR$/kafka-log-util/kafka-log-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafkademo/kafkademo.iml" filepath="$PROJECT_DIR$/kafkademo/kafkademo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/akka-sample-persistence-java/src/main/main.iml" filepath="$PROJECT_DIR$/akka-sample-persistence-java/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafkademo/kafkademo.iml" filepath="$PROJECT_DIR$/kafkademo/kafkademo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/opkoko2014.iml" filepath="$PROJECT_DIR$/opkoko2014.iml" />
     </modules>
   </component>
 </project>

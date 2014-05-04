@@ -1,0 +1,27 @@
+<configuration debug="true" scan="true" scanPeriod="10 seconds">
+    <contextName>kafkaLogContext</contextName>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- encoders are assigned the type
+             ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="KAFKA" class="se.op.opkoko2014.kafka.log.KafkaAppender">
+        <keyLayout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>%t</pattern>
+        </keyLayout>
+        <topicLayout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>%contextName</pattern>
+        </topicLayout>
+        <kafkaProperties>classpath:kafka_properties.properties</kafkaProperties>
+        <encoder>
+        </encoder>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="KAFKA" />
+    </root>
+</configuration>

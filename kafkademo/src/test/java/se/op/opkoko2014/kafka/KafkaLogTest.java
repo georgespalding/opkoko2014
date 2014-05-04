@@ -45,7 +45,7 @@ public class KafkaLogTest {
 
         ExecutorService executor = Executors.newFixedThreadPool(NTHREDS);
         List<Future<Void>> list = new LinkedList<>();
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 200; i++) {
             final int ci=i;
             Callable<Void> worker = new Callable<Void>(){
 
