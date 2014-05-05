@@ -28,7 +28,6 @@
     <modules>
         <module>kafkademo</module>
         <module>akka-sample-persistence-java</module>
-        <module>kafka-log-util</module>
     </modules>
 
     <repositories>

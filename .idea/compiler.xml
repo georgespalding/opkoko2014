@@ -23,7 +23,6 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="akka-sample-persistence-java" />
-        <module name="kafka-log-util" />
         <module name="kafkademo" />
       </profile>
     </annotationProcessing>
