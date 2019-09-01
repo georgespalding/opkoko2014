@@ -21,8 +21,8 @@ import ch.qos.logback.classic.LoggerContext;
  * Time: 21:07
  * To change this template use File | Settings | File Templates.
  */
-public class KafkaLogTest {
-    static final org.slf4j.Logger slf4jLogger=LoggerFactory.getLogger(KafkaLogTest.class);
+public class KafkaLogTestManual {
+    static final org.slf4j.Logger slf4jLogger=LoggerFactory.getLogger(KafkaLogTestManual.class);
 
     private static final int NTHREDS = 10;
 
